@@ -7,7 +7,7 @@ use CommonGLPI;
 use Glpi\Application\View\TemplateRenderer;
 
 class Config extends CommonDBTM {
-    protected $displaylist = false;
+    protected bool $displaylist = false;
 
     // Força a tela a ler/salvar na mesma tabela exata que o hook criou, ignorando plurais
     public static function getTable($classname = '') {

@@ -149,6 +149,13 @@ This forces the system core to strictly read and write to the exact same table, 
 
 ---
 
+## 📝 Changelog
+
+### 1.0.4
+- **Fix:** resolved a fatal compile error on **GLPI 12.0.0** ("Type of `Config::$displaylist` must be bool, as in class `CommonGLPI`") that prevented access to Setup > General. `CommonGLPI::$displaylist` is now a typed `bool` property in GLPI 12, so the plugin's override declares the same type.
+
+---
+
 ## 📄 License
 
 This plugin is free software, distributed under the terms of the **GNU General Public License** version 3 or later (GPLv3+). Feel free to clone, modify, and contribute to the project.
@@ -302,6 +309,13 @@ public static function getTable($classname = '') {
 ```
 
 Isso força o núcleo do sistema a ler e gravar rigorosamente na mesma tabela, garantindo que as alterações salvas pelo administrador entrem em vigor instantaneamente no motor de validação.
+
+---
+
+## 📝 Changelog
+
+### 1.0.4
+- **Correção:** resolvido um erro fatal de compilação no **GLPI 12.0.0** ("Type of `Config::$displaylist` must be bool, as in class `CommonGLPI`") que impedia o acesso a Configurar > Geral. A propriedade `CommonGLPI::$displaylist` agora é tipada como `bool` no GLPI 12, então o override do plugin declara o mesmo tipo.
 
 ---
 
