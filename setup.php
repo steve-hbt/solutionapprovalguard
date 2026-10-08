@@ -1,6 +1,6 @@
 <?php
 define('PLUGIN_SOLUTIONAPPROVALGUARD_VERSION', '1.0.4');
-define('PLUGIN_SOLUTIONAPPROVALGUARD_MIN_GLPI', '10.0.0');
+define('PLUGIN_SOLUTIONAPPROVALGUARD_MIN_GLPI', '12.0.0');
 
 function plugin_init_solutionapprovalguard() {
     global $PLUGIN_HOOKS;
